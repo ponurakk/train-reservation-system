@@ -9,3 +9,7 @@ inherits = "dev"
 
 [profile.dioxus-android]
 inherits = "dev"
+
+[registries.ycrates]
+index = "sparse+https://crates.ycode.pl/api/v1/crates/"
+credential-provider = ["cargo:token"]
