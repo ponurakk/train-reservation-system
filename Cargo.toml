@@ -1,0 +1,31 @@
+[package]
+name = "train-reservation-system"
+version = "0.1.0"
+authors = ["ponurakk <p0unrakg@int.pl>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "0.6.1", features = ["router", "fullstack"] }
+dioxus-logger = "0.6.1"
+gbrouting = { version = "0.5.0", registry = "ycrates", default-features = false }
+leaflet = "0.4.1"
+tokio = "1.42.0"
+web-sys = "0.3.76"
+
+[features]
+default = ["desktop"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"

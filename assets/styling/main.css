@@ -1,0 +1,7 @@
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Iosevka Term";
+  /* Important because of tailwind */
+  margin: 10px !important;
+}
