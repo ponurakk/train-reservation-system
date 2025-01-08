@@ -11,6 +11,11 @@ pub fn Navbar() -> Element {
                 class: "text-white",
                 "Home"
             }
+            Link {
+                to: Route::Train {},
+                class: "text-white",
+                "Train"
+            }
         }
 
         Outlet::<Route> {}

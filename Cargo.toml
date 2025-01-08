@@ -11,6 +11,7 @@ dioxus = { version = "0.6.1", features = ["router", "fullstack"] }
 dioxus-logger = "0.6.1"
 gbrouting = { version = "0.5.0", registry = "ycrates", default-features = false }
 leaflet = "0.4.1"
+rand = "0.8.5"
 tokio = "1.42.0"
 web-sys = "0.3.76"
 

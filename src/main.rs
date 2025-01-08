@@ -3,9 +3,10 @@ use dioxus::prelude::*;
 use components::Navbar;
 use dioxus_logger::tracing::{info, Level};
 use gbrouting::csa::routing::ConnectionScanCore;
-use views::Home;
+use views::{Home, Train};
 
 mod components;
+mod management;
 mod views;
 
 #[derive(Debug, Clone, Routable, PartialEq)]
@@ -14,6 +15,8 @@ enum Route {
     #[layout(Navbar)]
     #[route("/")]
     Home {},
+    #[route("/train")]
+    Train {},
 }
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");

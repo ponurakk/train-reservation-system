@@ -5517,6 +5517,7 @@ dependencies = [
  "dioxus-logger",
  "gbrouting",
  "leaflet",
+ "rand 0.8.5",
  "tokio",
  "web-sys",
 ]
